@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Bold.ttf">
+            <string>Lexend-Bold</string>
+        </array>
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+        <array key="Lexend-SemiBold.ttf">
+            <string>Lexend-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="467" id="KGk-i7-Jjw" customClass="SignTableViewCell" customModule="Agua" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-LO-tEo">
+                        <rect key="frame" x="-10" y="0.0" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="jd0-Iv-Ndb"/>
+                            <constraint firstAttribute="width" constant="30" id="vP3-Ch-I5c"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="back" imagePlacement="leading" title=""/>
+                        <connections>
+                            <action selector="crossAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7hj-1c-Dr1"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="7uI-4p-wZr">
+                        <rect key="frame" x="0.0" y="58" width="320" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxJ-ka-mw9" customClass="KTLabel" customModule="Agua" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow the steps below to create your account." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBc-p5-PU2" customClass="KTLabel" customModule="Agua" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="38" width="320" height="60"/>
+                                <fontDescription key="fontDescription" name="Lexend-SemiBold" family="Lexend" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wax-82-7gP">
+                        <rect key="frame" x="0.0" y="196" width="320" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIf-WR-7Ni">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBk-4l-xTv" customClass="KTTextField" customModule="Agua" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                        <color key="backgroundColor" name="textFieldBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="Z3L-Y1-Wz9"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCornerRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="attributed" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="aTP-av-r4L"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-l7-KMh" customClass="KTLabel" customModule="Agua" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="47" width="300" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="4cD-rR-tvD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
+                                        <color key="textColor" name="errorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cbp-l7-KMh" secondAttribute="bottom" constant="7.5" id="3fC-Ql-Ujm"/>
+                                    <constraint firstItem="cbp-l7-KMh" firstAttribute="leading" secondItem="mIf-WR-7Ni" secondAttribute="leading" constant="20" id="9WS-im-VIJ"/>
+                                    <constraint firstItem="TBk-4l-xTv" firstAttribute="top" secondItem="mIf-WR-7Ni" secondAttribute="top" id="TT4-z8-qBk"/>
+                                    <constraint firstItem="TBk-4l-xTv" firstAttribute="leading" secondItem="mIf-WR-7Ni" secondAttribute="leading" id="YLr-bA-3jv"/>
+                                    <constraint firstAttribute="trailing" secondItem="TBk-4l-xTv" secondAttribute="trailing" id="jHU-Bg-Xdn"/>
+                                    <constraint firstItem="cbp-l7-KMh" firstAttribute="top" secondItem="TBk-4l-xTv" secondAttribute="bottom" id="k69-9a-gFM"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbp-l7-KMh" secondAttribute="trailing" id="kdO-YS-haQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-rg-GQQ">
+                                <rect key="frame" x="0.0" y="75" width="320" height="75"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JB-9A-VOE" customClass="KTTextField" customModule="Agua" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                        <color key="backgroundColor" name="textFieldBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="1zZ-bq-etL"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCornerRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="attributed" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="yLE-XK-ru7"/>
+                                        </connections>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="oub-cz-BId">
+                                        <rect key="frame" x="25" y="10" width="24" height="27"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-4h-d42">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="27"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="14"/>
+                                                <color key="textColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZN-pZ-ohV">
+                                                <rect key="frame" x="23" y="0.0" width="1" height="27"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="eJ4-lJ-aBV"/>
+                                                    <constraint firstAttribute="width" constant="1" id="tdW-tK-fgJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-RK-UvT" customClass="KTLabel" customModule="Agua" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="47" width="300" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="Cb2-p0-5Jz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
+                                        <color key="textColor" name="errorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oub-cz-BId" firstAttribute="centerY" secondItem="3JB-9A-VOE" secondAttribute="centerY" id="9K4-5g-qpb"/>
+                                    <constraint firstItem="oub-cz-BId" firstAttribute="leading" secondItem="3JB-9A-VOE" secondAttribute="leading" constant="25" id="Bgk-A3-Eet"/>
+                                    <constraint firstItem="kAC-RK-UvT" firstAttribute="leading" secondItem="gUK-rg-GQQ" secondAttribute="leading" constant="20" id="CwR-ar-PI0"/>
+                                    <constraint firstItem="3JB-9A-VOE" firstAttribute="top" secondItem="gUK-rg-GQQ" secondAttribute="top" id="TF2-6J-yaB"/>
+                                    <constraint firstAttribute="trailing" secondItem="kAC-RK-UvT" secondAttribute="trailing" id="Tf1-jv-gON"/>
+                                    <constraint firstAttribute="trailing" secondItem="3JB-9A-VOE" secondAttribute="trailing" id="URU-tj-Rm0"/>
+                                    <constraint firstAttribute="bottom" secondItem="kAC-RK-UvT" secondAttribute="bottom" constant="7.5" id="ydP-1d-fgw"/>
+                                    <constraint firstItem="3JB-9A-VOE" firstAttribute="leading" secondItem="gUK-rg-GQQ" secondAttribute="leading" id="z7d-I9-lUw"/>
+                                    <constraint firstItem="kAC-RK-UvT" firstAttribute="top" secondItem="3JB-9A-VOE" secondAttribute="bottom" id="zmC-gm-yTV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-wo-afO">
+                        <rect key="frame" x="-6" y="346" width="231.5" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-fP-yqp">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0TL-DG-leC"/>
+                                    <constraint firstAttribute="height" constant="30" id="7z5-HE-J7I"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="unTickIcon" imagePlacement="leading" title=""/>
+                                <connections>
+                                    <action selector="tickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TLX-L4-uN9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to Agua’s Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGh-dm-480">
+                                <rect key="frame" x="30" y="0.0" width="201.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H2-TG-FNT">
+                        <rect key="frame" x="0.0" y="404" width="320" height="58"/>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.7803921568627451" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="QAh-8c-Gfb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lexend-Bold" family="Lexend" pointSize="16"/>
+                        <state key="normal" title="Continue"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCornerRounded" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="29"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="continueAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bax-VW-8PL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wax-82-7gP" secondAttribute="trailing" id="1ee-JL-p9e"/>
+                    <constraint firstItem="2H2-TG-FNT" firstAttribute="top" secondItem="Wtr-wo-afO" secondAttribute="bottom" constant="28" id="Ixp-dl-NDb"/>
+                    <constraint firstItem="2H2-TG-FNT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LJf-Dv-hPT"/>
+                    <constraint firstItem="s1Z-LO-tEo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mww-lx-Ydd"/>
+                    <constraint firstAttribute="trailing" secondItem="2H2-TG-FNT" secondAttribute="trailing" id="Vv0-wY-Ndb"/>
+                    <constraint firstItem="wax-82-7gP" firstAttribute="top" secondItem="7uI-4p-wZr" secondAttribute="bottom" constant="40" id="an2-nb-W5Z"/>
+                    <constraint firstItem="wax-82-7gP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bhq-KK-Ukg"/>
+                    <constraint firstItem="s1Z-LO-tEo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-10" id="d4B-36-iFa"/>
+                    <constraint firstItem="Wtr-wo-afO" firstAttribute="top" secondItem="wax-82-7gP" secondAttribute="bottom" id="gX4-S1-Rnf"/>
+                    <constraint firstItem="7uI-4p-wZr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k0C-D1-33Y"/>
+                    <constraint firstItem="Wtr-wo-afO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-6" id="n57-st-sBb"/>
+                    <constraint firstAttribute="trailing" secondItem="7uI-4p-wZr" secondAttribute="trailing" id="r94-MW-xEa"/>
+                    <constraint firstItem="7uI-4p-wZr" firstAttribute="top" secondItem="s1Z-LO-tEo" secondAttribute="bottom" constant="28" id="stC-kd-eLQ"/>
+                    <constraint firstAttribute="bottom" secondItem="2H2-TG-FNT" secondAttribute="bottom" constant="5" id="wJ4-SY-xZK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="emailErrorLbl" destination="cbp-l7-KMh" id="6eo-Ob-LI9"/>
+                <outlet property="emailTxtField" destination="TBk-4l-xTv" id="Ub9-fC-X03"/>
+                <outlet property="mobileErrorLbl" destination="kAC-RK-UvT" id="PjV-nk-2Bl"/>
+                <outlet property="mobileTxtField" destination="3JB-9A-VOE" id="1jX-wX-7jE"/>
+                <outlet property="termsOfServiceLbl" destination="gGh-dm-480" id="UtY-fC-TBh"/>
+                <outlet property="tickButton" destination="wc7-fP-yqp" id="kl3-pk-dGg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="219.97767857142856"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="3JB-9A-VOE">
+            <size key="intrinsicContentSize" width="103.5" height="79"/>
+        </designable>
+        <designable name="TBk-4l-xTv">
+            <size key="intrinsicContentSize" width="39" height="44"/>
+        </designable>
+        <designable name="bBc-p5-PU2">
+            <size key="intrinsicContentSize" width="559" height="30"/>
+        </designable>
+        <designable name="cbp-l7-KMh"/>
+        <designable name="hxJ-ka-mw9">
+            <size key="intrinsicContentSize" width="61" height="20"/>
+        </designable>
+        <designable name="kAC-RK-UvT"/>
+    </designables>
+    <resources>
+        <image name="back" width="13" height="13"/>
+        <image name="unTickIcon" width="14" height="14"/>
+        <namedColor name="errorColor">
+            <color red="0.92941176470588238" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textFieldBackground">
+            <color red="0.23921568627450981" green="0.26666666666666666" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

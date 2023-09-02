@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfilePicHeaderView" customModule="Agua" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-Pn-F7V">
+                    <rect key="frame" x="153" y="73" width="108" height="108"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="lre-Ir-Dt4">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="54"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-kK-f9a">
+                            <rect key="frame" x="74" y="74" width="34" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="editPic"/>
+                            <connections>
+                                <action selector="editPhotoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gwp-rI-pDI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="Bh3-Jl-fxP"/>
+                        <constraint firstAttribute="width" constant="108" id="Lnb-io-Kcv"/>
+                        <constraint firstAttribute="trailing" secondItem="lre-Ir-Dt4" secondAttribute="trailing" id="Uaw-z4-W6p"/>
+                        <constraint firstAttribute="bottom" secondItem="lre-Ir-Dt4" secondAttribute="bottom" id="YtX-5o-YCb"/>
+                        <constraint firstItem="lre-Ir-Dt4" firstAttribute="leading" secondItem="OSa-Pn-F7V" secondAttribute="leading" id="ncm-7E-0Tv"/>
+                        <constraint firstAttribute="trailing" secondItem="Xfm-kK-f9a" secondAttribute="trailing" id="pIY-CP-qFc"/>
+                        <constraint firstItem="lre-Ir-Dt4" firstAttribute="top" secondItem="OSa-Pn-F7V" secondAttribute="top" id="pQZ-hH-fnB"/>
+                        <constraint firstAttribute="bottom" secondItem="Xfm-kK-f9a" secondAttribute="bottom" id="sjc-oe-ptd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="54"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="labelColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OSa-Pn-F7V" secondAttribute="bottom" constant="29" id="P6N-mc-PFX"/>
+                <constraint firstItem="OSa-Pn-F7V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="73" id="PDd-aX-MIL"/>
+                <constraint firstItem="OSa-Pn-F7V" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iq2-Cy-r2K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButton" destination="Xfm-kK-f9a" id="yaa-yE-1xX"/>
+                <outlet property="profileImgView" destination="lre-Ir-Dt4" id="sjC-bR-ekn"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-131.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editPic" width="34" height="34"/>
+        <image name="profilePlaceholder" width="150" height="150"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
