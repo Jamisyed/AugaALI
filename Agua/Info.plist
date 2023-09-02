@@ -20,6 +20,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    </array>
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow Agua to access your camera to take picture and upload your profile photo</string>
 	<key>NSMicrophoneUsageDescription</key>
